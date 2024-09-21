@@ -3,7 +3,7 @@ from wtforms import StringField, IntegerField, SubmitField
 from wtforms.validators import DataRequired
 
 class PetForm(FlaskForm):
-    name = StringField('Name', validators=[DataRequired()])
-    age = IntegerField('Age', validators=[DataRequired()])
-    type = StringField('Type', validators=[DataRequired()])
+    name = StringField('Pet Name', validators=[DataRequired()])
+    age = IntegerField('Pet Age', validators=[DataRequired()])
+    type = StringField('Pet Type', validators=[DataRequired()])
     submit = SubmitField('Add Pet')
